@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-black">
       <NavBar />
     </main>
   );
