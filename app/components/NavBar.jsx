@@ -1,5 +1,5 @@
 "use client";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 
@@ -7,18 +7,18 @@ const NavBar = () => {
   return (
     <React.Fragment>
       <Navbar className="bg-secondary border-bottom border-dark border-5">
-        <Container className="">
+        <Container className="nav-container">
           <Nav className="ms-auto">
             <Nav.Link href="#home" className="text-dark fs-5 fw-bold">
               Home
             </Nav.Link>
-            <Nav.Link href="#about-me" className="text-dark fs-5 fw-bold">
+            <Nav.Link href="#about" className="text-dark fs-5 fw-bold">
               About Me
             </Nav.Link>
             <Nav.Link href="#projects" className="text-dark fs-5 fw-bold">
               Projects
             </Nav.Link>
-            <Nav.Link href="#contact-me" className="text-dark fs-5 fw-bold">
+            <Nav.Link href="#contact" className="text-dark fs-5 fw-bold">
               Contact Me
             </Nav.Link>
           </Nav>
