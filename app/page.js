@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import LoadingPage from "./components/LoadingPage";
 import React, { useState, useEffect } from "react";
 import MouseCursor from "./components/MouseCursor";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -14,9 +15,12 @@ export default function Home() {
   return (
     <React.Fragment>
       {loading === false ? (
-        <main className="bg-black">
-          <MouseCursor/>
+        <main className="bg-light">
+          <MouseCursor />
           <NavBar />
+          <div>
+            <HeroSection />
+          </div>
         </main>
       ) : (
         <LoadingPage />
